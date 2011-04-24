@@ -2,3 +2,7 @@
 db/*.sqlite3
 log/*.log
 tmp/
+
+# Ignore swap files
+**/.*.swp
+*.*.swp
