@@ -1,0 +1,31 @@
+Scenarios
+
+Given I visit index
+I should see a calendar of events
+And the next event
+And a link to the previous events
+
+
+Given I click on an event
+I should see a list of events
+
+
+
+Features:
+  V 1.0  
+ * Calendar
+ * Profile - GitHib Integration
+ * RSS 
+ * Mobile
+ * Events 
+   
+ 
+
+
+  V 2.0
+ * Newsletter
+ * Community. Questions
+ * Gists
+  
+
+
