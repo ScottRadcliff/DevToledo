@@ -33,4 +33,6 @@ gem 'sass'
  group :development, :test do
    gem 'webrat'
    gem 'rspec-rails'
+   gem 'autotest'
+   gem 'capybara'
  end
