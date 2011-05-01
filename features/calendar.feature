@@ -7,4 +7,9 @@ Feature: Calendar
 Scenario: View this months advents
 
 
-Scenario: 
+Scenario: View the Calendar
+
+
+
+
+

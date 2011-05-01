@@ -59,6 +59,7 @@ GEM
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    event-calendar (2.3.3)
     ffi (1.0.7)
       rake (>= 0.8.7)
     gherkin (2.3.6)
@@ -136,6 +137,7 @@ DEPENDENCIES
   capybara
   cucumber-rails
   database_cleaner
+  event-calendar
   haml
   rails (= 3.0.7)
   rspec-rails
