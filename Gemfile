@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.6'
+gem 'rails', '3.0.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -33,6 +33,9 @@ gem 'sass'
  group :development, :test do
    gem 'webrat'
    gem 'rspec-rails'
-   gem 'autotest'
+   gem 'autotest-standalone', '4.5.5'
+   gem 'autotest-growl'
    gem 'capybara'
+   gem 'cucumber-rails'
+   gem 'database_cleaner'
  end
