@@ -9,3 +9,5 @@ tmp/
 
 # Ignore autotest. Others may want to set this up themseleves
 .autotest
+
+.sass-cache/

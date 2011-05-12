@@ -1,0 +1,9 @@
+%h1 Events
+
+= render :partial => "shared/calendar"
+%h2 This Month's Events
+
+%section
+  - @next_five_events.each do |event|
+    %h5= link_to event.name, event_path(event)
+    

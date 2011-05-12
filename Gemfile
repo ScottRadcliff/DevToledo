@@ -39,4 +39,5 @@ gem 'event-calendar', :require => 'event_calendar'
    gem 'capybara'
    gem 'cucumber-rails'
    gem 'database_cleaner'
+   gem 'launchy'
  end

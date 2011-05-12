@@ -1,17 +1,4 @@
-html, * {margin: 0px; padding: 0px;}
-
-/* Coming Soon */
-
-#container {max-width: 1100px; margin: 0px auto; position: relative;}
-#content {position: absolute; top: 200px;}
-#leading_paragraph {color: red; font: 14px Georgia, serif; position: absolute; left: 38px; top: -20px;}
-
-#left {float: left; width: 700px;}
-#right {float: left; width: 300px; position: relative; top: 20px;}
-
-
-#signup_text {width: 200px;}
-#signup_form {margin-top: 19px;}
-#MERGE0 {background: #CCC; border: 1px solid #CCC; height: 18px; margin-top: 9px; font-style: italic;}
-
-/* End Coming Soon */
+/* Globals */
+.container {
+  width: 960px;
+  margin: 0px auto; }
