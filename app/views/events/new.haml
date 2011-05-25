@@ -1,0 +1,13 @@
+- form_for @event do |f|
+  = @event.errors.full_messages.each {|msg| msg} unless @event.errors.empty?
+
+  = f.label :name, "Name"
+  = f.text_field :name  
+  %br
+  = f.label :start_at, "Start Date"
+  = f.date_select(:start_at)
+  %br
+  = f.label :end_at, "End Date"
+  = f.date_select(:end_at)
+  %br
+  = f.submit "Create Event"

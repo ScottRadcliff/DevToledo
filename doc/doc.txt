@@ -1,0 +1,18 @@
+DevToledo App
+
+DevToledo is an application that connects local web professionals through events, meetups, and similar interests. The main goal of the application is to inform and education others of like minded local talent. The current state of finding these types of events is difficult. DevToledo aims to make it easy web technologies such as RSS, mobile, and Social Media.
+
+This is really just a big 'ol event calendar
+
+
+
+Features
+- Add an event
+- See an event
+- Search for an event
+
+
+
+
+Models
+- Events
