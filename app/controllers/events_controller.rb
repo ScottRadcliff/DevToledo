@@ -18,6 +18,18 @@ class EventsController < ApplicationController
     @next_five_events = Event.next_five_events
   end
 
-    
+  def new
+    @event = Event.new
+  end
   
+  def create
+   @event = Event.new(params[:event]) 
+   if @event.save
+     redirect_to events_path, :notice => "Event created"
+   else
+     render :new
+   end 
+  end
+
+
 end

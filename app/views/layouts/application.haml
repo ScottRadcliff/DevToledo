@@ -9,6 +9,7 @@
     %section.container
       %header
         = image_tag("logo_small.png")
+        = notice unless notice.nil?
       = yield
 
 

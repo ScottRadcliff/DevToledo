@@ -9,14 +9,15 @@ describe EventsController do
     events.should_not be_nil
   end
 
-  it "should show the current month by default" do
-    pending 
+  it "#new" do
+    get :new
+    assert_response :success
+    assigns(:event).should_not be_nil
   end
 
-  it "should show a list of this months events" do
-    get :index
-    assigns(:this_months_events).should_not be_nil
+  it "#create" do
+    post :create, :event => {:id => 1}
+    assigns(:event).should_not be_nil
   end
-
 
 end

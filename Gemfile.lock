@@ -144,7 +144,7 @@ DEPENDENCIES
   event-calendar
   haml
   launchy
-  rails (= 3.0.7)
+  rails
   rspec-rails
   sass
   sqlite3
