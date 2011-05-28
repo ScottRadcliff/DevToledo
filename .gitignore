@@ -11,3 +11,5 @@ tmp/
 .autotest
 
 .sass-cache/
+doc/secret.txt
+doc/mock.psd

@@ -14,7 +14,7 @@ describe Event do
     events.count.should == 5
   end
   
-  it "should not save an event with a end date before the start date" do
+  it "should not save an event with an end date before the start date" do
     e = Event.new(:start_at => Date.today.midnight + 1.day, :end_at => Date.today.midnight)
     assert !e.save
   end

@@ -10,9 +10,21 @@ Features
 - Add an event
 - See an event
 - Search for an event
-
+- Messaging system (blog)
+- Meetup api 
 
 
 
 Models
 - Events
+- Blog
+- Search
+
+
+Index
+- next event
+- people attending the event (Twitter)
+
+
+
+Twitter API key: c0YrCVy0DeASlX6Z4uwKA
