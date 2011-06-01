@@ -12,4 +12,9 @@ class Event < ActiveRecord::Base
       errors.add(:end_at, "cannot be before the start date")
     end
   end
+
+  # Returns the next event
+  def self.next
+   @event = Event.where("start_at > ?", Date.today).limit(1) 
+  end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110501210326) do
+ActiveRecord::Schema.define(:version => 20110601011124) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20110501210326) do
     t.boolean  "all_day",    :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "details"
   end
 
 end

@@ -1,0 +1,6 @@
+%h1 
+  =@event[0][:name]
+
+%p 
+  =@event[0][:start_at].strftime("%A %B %d, %Y")
+=simple_format(@event[0][:details])
