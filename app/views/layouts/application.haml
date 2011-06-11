@@ -8,8 +8,17 @@
   %body
     %section.container-16
       %header
-        = image_tag("logo_small.png")
-        = notice unless notice.nil?
+        %span.grid-5
+          = image_tag("logo_small.png")
+          = notice unless notice.nil?
+        
+        %nav.grid-7#main_nav
+          %a{:href => "#", :class => "current"} Home
+          %a{:href => "#"} Blog
+          %a{:href => "#"} Events
+
+        %span.search.grid-3
+          %input{:type => "text", :value => "Search"}
       = yield
 
 
