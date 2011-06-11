@@ -7,7 +7,7 @@ DevToledo::Application.routes.draw do
   # first created -> highest priority.
 
 
- match 'index' => 'index#index'
+ match '/' => 'index#index'
 
 
 
