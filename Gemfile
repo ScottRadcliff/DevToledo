@@ -8,7 +8,7 @@ gem 'rails'
 gem 'sqlite3'
 gem 'haml'
 gem 'sass'
-gem 'event-calendar', :require => 'event_calendar'
+#gem 'event-calendar', :require => 'event_calendar'
 
 
 

@@ -8,5 +8,11 @@
   margin-right: 25px; }
 
 /* @Index */
-#event {
+#event_container {
   clear: both; }
+
+#event_container, #sidebar {
+  margin: 79px 0 0; }
+
+.event {
+  padding: 30px 0; }
