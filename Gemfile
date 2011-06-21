@@ -7,6 +7,7 @@ gem 'rails'
 
 gem 'sqlite3'
 gem 'haml'
+gem 'haml-rails'
 gem 'sass'
 #gem 'event-calendar', :require => 'event_calendar'
 
@@ -32,12 +33,10 @@ gem 'sass'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
  group :development, :test do
-   gem 'webrat'
    gem 'rspec-rails'
-   gem 'autotest-standalone', '4.5.5'
-   gem 'autotest-growl'
    gem 'capybara'
    gem 'cucumber-rails'
    gem 'database_cleaner'
    gem 'launchy'
+   gem 'awesome_print'
  end

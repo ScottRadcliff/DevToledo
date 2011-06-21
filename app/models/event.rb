@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-  has_event_calendar
+  #has_event_calendar
   validate :end_date_is_after_start_date
 
   def self.next_five_events

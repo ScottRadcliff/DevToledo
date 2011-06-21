@@ -4,22 +4,9 @@ Feature: Events
   I want to see a calender of events
 
 
-Scenario: View this months events
-
-
-Scenario: View the Calendar
- Given I am on /events
- Then I should see "Events"
- And I should see "This Month's Events"
- 
-Scenario: Add an event
-
-Scenario: Edit an event
-
-Scenario: Remove and event
-
-Scenario: View an event
-
+Scenario: Latest Event
+Given I visit the index page
+Then I should the next event
 
 
 

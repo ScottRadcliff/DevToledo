@@ -11,8 +11,6 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
 
-    when /events/
-      events_path
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
