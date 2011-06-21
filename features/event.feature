@@ -1,12 +1,12 @@
 Feature: Events
   In order to see what's happening
   As a visitor
-  I want to see a calender of events
+  I want to see local and regional events
 
 
 Scenario: Latest Event
-Given I visit the index page
-Then I should the next event
+Given I am on the home page
+Then I should see the next event
 
 
 
