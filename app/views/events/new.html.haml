@@ -1,0 +1,9 @@
+= form_for @event do |form|
+    = form.label :title, "Title"
+    = form.text_field :title
+    
+    = form.label :body, "Details"
+    = form.text_area :body
+
+    = form.date_select :date
+    = form.submit "Create Event"

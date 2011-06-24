@@ -1,0 +1,4 @@
+Event1:
+  title: "Title1"
+  body: "body2"
+  date: <%= Date.today + 1.day %>

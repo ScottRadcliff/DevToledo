@@ -10,7 +10,8 @@
       %header
         %span.grid-5
           = image_tag("logo_small.png")
-          = notice unless notice.nil?
+          = link_to "Create an event", new_event_path
+          = flash[:notice]
         
         %nav.grid-7#main_nav
           %a{:href => "#", :class => "current"} Home

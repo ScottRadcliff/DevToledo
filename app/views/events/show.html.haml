@@ -1,0 +1,4 @@
+%section.grid-12#event_container
+  %h1= @event.title
+  %p= @event.date.strftime("%D")
+  = simple_format(@event.body)

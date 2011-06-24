@@ -39,4 +39,6 @@ gem 'sass'
    gem 'database_cleaner'
    gem 'launchy'
    gem 'awesome_print'
+   gem 'factory_girl_rails'
+   gem 'awesome_print'
  end
