@@ -7,21 +7,15 @@
     = csrf_meta_tag
   %body
     %section.container-16
-      %header
-        %span.grid-5
-          = image_tag("logo_small.png")
-          = link_to "Create an event", new_event_path
-          = flash[:notice]
-        
-        %nav.grid-7#main_nav
-          %a{:href => "#", :class => "current"} Home
-          %a{:href => "#"} Blog
-          %a{:href => "#"} Events
-
-        %span.search.grid-3
-          %input{:type => "text", :value => "Search"}
-      = yield
-
+      = render :partial => "shared/header"
+      %section.grid-12#event_container
+        = yield
+    %section.grid-4#sidebar
+      %h3 Other Events
+      %ul
+        %li Event One
+        %li Event Two
+        %li Event Three
 
 
 

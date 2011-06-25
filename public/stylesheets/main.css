@@ -1,4 +1,7 @@
 /* Globals */
+label, input {
+  display: block; }
+
 /* @Nav */
 #main_nav, .search {
   padding: 10px 0px; }
