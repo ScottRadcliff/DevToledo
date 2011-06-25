@@ -1,13 +1,6 @@
-%section.grid-12#event_container
-  - unless @event.empty?
-    %h1= link_to @event[0].title, event_path(@event[0])
-    %p= @event[0].date.strftime("%D")
-    = simple_format(@event[0].body)
+- unless @event.empty?
+  %h1= link_to @event[0].title, event_path(@event[0])
+  %p= @event[0].date.strftime("%D")
+  = simple_format(@event[0].body)
 
-%section.grid-4#sidebar
-  %h3 Other Events
-  %ul
-    %li Event One
-    %li Event Two
-    %li Event Three
 

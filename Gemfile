@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'haml'
 gem 'haml-rails'
 gem 'sass'
+gem "devise"
 #gem 'event-calendar', :require => 'event_calendar'
 
 
