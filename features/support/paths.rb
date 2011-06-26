@@ -10,6 +10,9 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+    
+    when new_user_session_path
+     "/users/sign_in"
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

@@ -5,20 +5,45 @@ Feature: User
 
 Scenario: Sign up
   Given I am on the home page
-  And I press "Create an account"
-  And I fill in "email" with "scott@scottradcliff.com"
-  And I fill in "password" with "password"
+  And I follow "Create an account"
+  And I fill in "Email" with "scott@scottradcliff.com"
+  And I fill in "Password" with "password"
+  And I fill in "Password confirmation" with "password"
+  And I press "Sign up"
   Then I should see "Account successfully created"
+  And I should see "Logged in as scott@scottradcliff.com"
 
 
 Scenario: Sign in
+  Given there is a user with the following:
+  |email   |scott@scottradcliff.com|
+  |password|password|
+  And I am on the home page
+  And I am not signed_in
+  And I follow "Log in"
+  And I fill in "Email" with "scott@scottradcliff.com"
+  And I fill in "Password" with "password"
+  And I press "Sign in"
+  Then I should see "Logged in successfully"
 
-Scenario: Edit account
-
-Scenario: Delete account
 
 Scenario: Create an event
+  Given I am on the home page
+  And I am logged in
+  And I follow "Create an event"
+  And I fill in "Title" with "Nerd Lunch"
+  And I fill in "Details" with "A great time"
+  And I select "2011" from "event_date_1i"
+  And I select "June" from "event_date_2i"
+  And I select "24" from "event_date_3i"
+  And I press "Create Event"
+  Then I should see "Event successfully created"
+  And I should see "Nerd Lunch"
 
-Scenario: Edit an event
+Scenario: Only user can create an event
+  Given I am not signed_in
+  And I go to the new event page
+  Then I should see "You need to sign in or sign up before continuing."
 
 
+Scenario: Delete account

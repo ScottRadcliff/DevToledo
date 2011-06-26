@@ -24,13 +24,6 @@ Feature: Events
 #  Then I should see "Event successfully created"
 #  And I should see "Geek Breakfast"
 
-
-
-
-Scenario: Edit an event
-
-Scenario: Delete an event
-
 Scenario: RSVP for an event
 
 Scenario: Comment about an event
