@@ -7,6 +7,7 @@
     = link_to "Create an event", new_event_path
     - if user_signed_in?
       = "Logged in as #{current_user.email}"
+      = link_to "Log out", destroy_user_session_path
       - else
       = link_to "Create an account", new_user_registration_path
       or

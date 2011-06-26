@@ -13,7 +13,13 @@ module NavigationHelpers
     
     when new_user_session_path
      "/users/sign_in"
-
+    
+    when /my event page/
+      "/events/1"
+   
+    when /the new event page/
+     '/events/new'
+  
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

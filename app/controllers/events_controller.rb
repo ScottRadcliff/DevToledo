@@ -19,6 +19,13 @@ before_filter :authenticate_user!
   end
 
   def edit
-    
+   @event = Event.find(params[:id]) 
+  end
+
+  def update
+    @event = Event.update(params[:id], params[:event])
+    if @event.save
+      redirect_to event_path(@event), :notice => "Event updated"
+    end
   end
 end

@@ -26,6 +26,11 @@ Scenario: Sign in
   And I press "Sign in"
   Then I should see "Logged in successfully"
 
+Scenario: Sign out
+  Given I am logged in
+  And I follow "Log out"
+  Then I should see "Logged out successfully"
+
 
 Scenario: Create an event
   Given I am on the home page
@@ -42,7 +47,7 @@ Scenario: Create an event
 
 Scenario: Edit an event
   Given I have an event
-  And I go the my event page
+  And I go to my event page
   And I follow "Edit"
   And I fill in "Title" with "Changed"
   And I press "Save Changes"
@@ -55,4 +60,3 @@ Scenario: Only user can create an event
   Then I should see "You need to sign in or sign up before continuing."
 
 
-Scenario: Delete account
