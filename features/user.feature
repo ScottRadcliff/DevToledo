@@ -40,6 +40,15 @@ Scenario: Create an event
   Then I should see "Event successfully created"
   And I should see "Nerd Lunch"
 
+Scenario: Edit an event
+  Given I have an event
+  And I go the my event page
+  And I follow "Edit"
+  And I fill in "Title" with "Changed"
+  And I press "Save Changes"
+  Then I should see "Event updated"
+  And I should see "Changed"
+
 Scenario: Only user can create an event
   Given I am not signed_in
   And I go to the new event page

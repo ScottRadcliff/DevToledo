@@ -18,5 +18,7 @@ before_filter :authenticate_user!
     @event = Event.find(params[:id])
   end
 
-
+  def edit
+    
+  end
 end

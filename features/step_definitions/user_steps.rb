@@ -14,3 +14,12 @@ Given /^I am logged in$/ do
   click_button "Sign in"
 end
 
+Given /^I have an event$/ do
+  user = Factory.create(:user)
+  @event = Factory.create(:event, :user_id => user.id)
+end
+
+Given /^I go the my event page$/ do
+  visit path_to edit_event_path, :id => @event.id
+end
+
