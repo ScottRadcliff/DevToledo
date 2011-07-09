@@ -6,7 +6,3 @@ Factory.define :event do |event|
 end
 
 
-Factory.define :user do |user|
-  user.sequence(:email) {|n| "scott#{n}@scottradcliff.com" }
-  user.password "password"
-end
