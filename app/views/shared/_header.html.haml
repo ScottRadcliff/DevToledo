@@ -3,14 +3,5 @@
     = link_to image_tag("logo_small.png"), root_url
     = flash[:notice]
     = flash[:alert]
-  %nav.grid-7#main_nav
-    = link_to "Create an event", new_event_path
-    - if user_signed_in?
-      = "Logged in as #{current_user.email}"
-      = link_to "Log out", destroy_user_session_path
-      - else
-      = link_to "Create an account", new_user_registration_path
-      or
-      = link_to 'Log in', new_user_session_path
   %span.search.grid-3
     %input{:type => "text", :value => "Search"}
