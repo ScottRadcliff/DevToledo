@@ -10,7 +10,6 @@ gem 'haml'
 gem 'haml-rails'
 gem 'sass'
 
-gem "devise"
 gem 'hpricot'
 gem 'ruby_parser'
 
