@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-before_filter :authenticate_user!, :only => [:create, :new, :edit, :update]
+before_filter :authorize
 
   def new
     @event = Event.new 

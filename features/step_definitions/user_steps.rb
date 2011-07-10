@@ -2,6 +2,11 @@ Given /^there is a user with the following:$/ do |table|
   Factory.create(:user, :email => "scott@scottradcliff.com") 
 end
 
+Given /^I have an event with the following:$/ do |table|
+  # table is a Cucumber::Ast::Table
+  Factory.create(:event, :title => "Toledo Rails", :body => "Coming soon", :date => "2011/3/12")
+end
+
 Given /^I am not signed_in$/ do
   visit destroy_user_session_path
 end
