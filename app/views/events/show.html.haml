@@ -1,6 +1,3 @@
 %h1= @event.title
-- if user_signed_in? && @event.user_id == current_user.id
-  = link_to "Edit", edit_event_path(@event)
 %p= @event.date.strftime("%D")
 = simple_format(@event.body)
-= current_user.id
